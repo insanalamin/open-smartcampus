@@ -153,7 +153,7 @@ CREATE TABLE `pengguna` (
   `id` int(11) NOT NULL,
   `tipe` tinyint(4) NOT NULL DEFAULT 3 COMMENT '1 = admin, 2 = dosen, 3 = mahasiswa',
   `username` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
   `status_aktif` tinyint(4) NOT NULL DEFAULT 1,
   `waktu_registrasi` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
